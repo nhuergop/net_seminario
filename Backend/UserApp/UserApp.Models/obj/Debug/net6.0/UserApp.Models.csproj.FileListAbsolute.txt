@@ -1,0 +1,12 @@
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\bin\Debug\net6.0\UserApp.Models.deps.json
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\bin\Debug\net6.0\UserApp.Models.dll
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\bin\Debug\net6.0\UserApp.Models.pdb
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\UserApp.Models.csproj.AssemblyReference.cache
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\UserApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\UserApp.Models.AssemblyInfoInputs.cache
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\UserApp.Models.AssemblyInfo.cs
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\UserApp.Models.csproj.CoreCompileInputs.cache
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\UserApp.Models.dll
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\refint\UserApp.Models.dll
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\UserApp.Models.pdb
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.Models\obj\Debug\net6.0\ref\UserApp.Models.dll

@@ -4,10 +4,27 @@ namespace UserApp.API
     {
         public static void Main(string[] args)
         {
+            // tipo de app que estamos haciendo
             var builder = WebApplication.CreateBuilder(args);
+            
+            // Agregar servicios al contenedor
+            builder.Services.AddControllers();
+
+            // para aprender como configurar Swagger https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+            
             var app = builder.Build();
 
-            app.MapGet("/", () => "Hello World!");
+            // configura el pipeline de consultas HTTP
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+
+            app.UseAuthorization();
+            app.MapControllers();
 
             app.Run();
         }
