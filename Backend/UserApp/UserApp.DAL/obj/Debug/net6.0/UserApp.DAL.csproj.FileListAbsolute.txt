@@ -1,0 +1,5 @@
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.DAL\obj\Debug\net6.0\UserApp.DAL.csproj.AssemblyReference.cache
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.DAL\obj\Debug\net6.0\UserApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.DAL\obj\Debug\net6.0\UserApp.DAL.AssemblyInfoInputs.cache
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.DAL\obj\Debug\net6.0\UserApp.DAL.AssemblyInfo.cs
+C:\Nico\Proyectos_informaticos\net_seminario\Backend\UserApp\UserApp.DAL\obj\Debug\net6.0\UserApp.DAL.csproj.CoreCompileInputs.cache

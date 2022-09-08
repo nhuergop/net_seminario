@@ -31,7 +31,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj": {
+                "projectPath": "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

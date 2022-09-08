@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "Fr2bYoMQ0cBBJYw6ey2bKV6ybAid5LU4Z2fMa/XZ7+/LzDf18SPcq6EI8bHu2fQAh4kHFJ0MUr73y5mcC+tcPg==",
-  "success": true,
+  "dgSpecHash": "W1HELTdwORNLku89lC6LkLGzQl6v6N7CJVTJbY2/toEVXlI06GbhjpGJd9yAqXe4vLKffJKCbCl4eH0IUVR9wg==",
+  "success": false,
   "projectFilePath": "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\UserApp.Services\\UserApp.Services.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

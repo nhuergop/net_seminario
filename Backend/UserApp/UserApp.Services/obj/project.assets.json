@@ -5,7 +5,9 @@
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Nico\\.nuget\\packages\\": {},
@@ -38,7 +40,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj": {
+              "projectPath": "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -69,5 +75,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "C:\\Nico\\Proyectos_informaticos\\net_seminario\\Backend\\UserApp\\usersApp.models\\userApp.models.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
