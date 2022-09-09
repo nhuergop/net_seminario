@@ -8,7 +8,9 @@ using UserApp.Models;
 
 namespace UserApp.Services
 {
-    public interface GroupServices
+
+    // la interfaz define qué metodos y propiedades va a tener la clase que la implemente
+    public interface IGroupService
     {
         public void CreateGroup(GroupModel groupModel);
 

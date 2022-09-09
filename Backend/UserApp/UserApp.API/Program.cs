@@ -1,3 +1,5 @@
+using UserApp.Services;
+
 namespace UserApp.API
 {
     public class Program
@@ -9,6 +11,15 @@ namespace UserApp.API
             
             // Agregar servicios al contenedor
             builder.Services.AddControllers();
+
+            #region INYECCION DE DEPENDENCIAS PROPIAS
+            // Agregar db context de la capa DAL
+            builder.Services.AddDbContext<DAL.AppDbContext>();
+
+            // caoa de dependencias Service
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IGroupService, GroupService>();
+            #endregion
 
             // para aprender como configurar Swagger https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

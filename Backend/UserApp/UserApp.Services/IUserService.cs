@@ -8,7 +8,7 @@ using UserApp.Models;
 
 namespace UserApp.Services
 {
-    public interface UserServices
+    public interface IUserService
     {
         public void CreateUser(UserModel userModel);
 

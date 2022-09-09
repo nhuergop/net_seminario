@@ -13,9 +13,9 @@ namespace UserApp.API.Controllers
     // : indica que hereda
     public class UserControler : ControlerBase
     {
-        private readonly UserService userService;
+        private readonly IUserService userService;
 
-        public UserControler(UserServiceImp userService)
+        public UserControler(UserService userService)
         {
             this.userService = userService;
         }
@@ -63,7 +63,7 @@ namespace UserApp.API.Controllers
         public ActionResult CreateUser([FromBody] UserModel user)
         {
             // llama a servicios
-            var su = new UserServiceImp();
+            var su = new UserService();
 
             su.CreateUser(user);
             return Ok();

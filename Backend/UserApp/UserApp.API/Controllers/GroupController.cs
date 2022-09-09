@@ -11,12 +11,13 @@ namespace UserApp.API.Controllers
     [ApiController]
     public class GroupController : ControllerBase
     {
+        // es una buena practica usar las interfaces y no las clases
+        // porque, a medida que vas mas alto en las capas de codigo, podes reutilizarlo mejor ¿?
+        private readonly IGroupService _groupService;
 
-        private readonly GroupServiceImp? groupService;
-
-        public GroupController(GroupServiceImp? groupService)
+        public GroupController(IGroupService groupService)
         {
-            this.groupService = groupService;
+            this._groupService = groupService;
         }
 
 
@@ -24,8 +25,8 @@ namespace UserApp.API.Controllers
         [HttpGet("{groupId}")]
         public ActionResult<GroupModel> Group([FromRoute] int groupId)
         {
-            var service = new GroupServiceImp();
-            return groupService.GetGroup(groupId);
+            // var service = new GroupService();
+            return _groupService.GetGroup(groupId);
         }
 
         // GET GROUPS
@@ -37,25 +38,30 @@ namespace UserApp.API.Controllers
             result.Add(new GroupModel
             {
                 groupId = 1,
-                groupName="Rebels",
-                Disabled=false,
-                LastUpdateBy="Nicolás Huergo"
+                groupName = "Rebels",
+                Status = "ACTIVE",
+                LastUpdateBy = "Nicolás Huergo"
             });
             result.Add(new GroupModel
             {
                 groupId = 2,
                 groupName = "Liberals",
-                Disabled = false,
+                Status = "ACTIVE",
                 LastUpdateBy = "Ramón Huergo"
             });
 
             return result;
         }
 
-        // POST USER
+        // POST GROUP
         [HttpPost]
-        public ActionResult CreateGroup([FromBody] GroupModel group)
+        public ActionResult CreateGroup([FromBody] GroupModel group) // [FromBody] [FromRoute] ??? @
         {
+            /* INYECTAR DEPENDENCIA:
+             * 1. ver punto 05 de clase_05.txt
+             */
+            _groupService.CreateGroup(group);
+
             return Ok();
         }
 
@@ -75,6 +81,8 @@ namespace UserApp.API.Controllers
             return Ok();
         }
 
+        // ACTIVATE
+        [HttpPatch("{id}/[Action]")]
 
 
 

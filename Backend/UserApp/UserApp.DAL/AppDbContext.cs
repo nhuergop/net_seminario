@@ -5,17 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//using UserApp.DAL.Entities;
+
 
 namespace UserApp.DAL
 {
-    public class UserAppContext : DbContext
+    public class AppDbContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySQL("server:localhost:3000;database:userapp;user=root;password=");
         }
-        public DbSet<UserApp.DAL.Entities.UserContext> Users { get; set; }
+        public DbSet<Entities.User> Users { get; set; }
 
-        public DbSet<UserApp.DAL.Entities.GroupContext> Groups { get; set; }
+        public DbSet<Entities.Group> Groups { get; set; }
     }
 }

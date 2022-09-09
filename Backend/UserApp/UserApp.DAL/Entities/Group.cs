@@ -9,13 +9,13 @@ using System.ComponentModel.DataAnnotations;
 namespace UserApp.DAL.Entities
 {
 
-    [Table("group")]
-    public class GroupContext
+    [Table("Group")]
+    public class Group
     {
         [Key]
         public int groupId { get; set; }
         public string groupName { get; set; }
-        public bool Disabled { get; set; }
+        public bool Inactive { get; set; }
         public DateTime LastUpdateDate { get; set; }
         public string LastUpdateBy { get; set; }
     }

@@ -9,8 +9,8 @@ using System.ComponentModel.DataAnnotations;
 namespace UserApp.DAL.Entities
 {
 
-    [Table("user")]
-    public class UserContext
+    [Table("User")]
+    public class User
     {
         [Key]
         public int userId { get; set; }
